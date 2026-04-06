@@ -176,6 +176,20 @@ Append-only log of all scan and review activity. All entries go in the `entries`
 }
 ```
 
+## Safety Rules
+
+The agent must NEVER perform any of the following Notion operations:
+- **Delete or archive** pages or database entries
+- **Move** pages between parents
+- **Resolve or delete** comments
+- **Modify page permissions** or sharing settings
+
+The only permitted Notion writes (when enabled via config) are:
+- Posting new comments (`auto_comment: true`)
+- Editing page content blocks (`auto_edit: true`)
+
+When both are `false` (the default), the agent is fully read-only with respect to Notion.
+
 ## Locking Protocol
 
 The scan-lock is intentionally simple because:

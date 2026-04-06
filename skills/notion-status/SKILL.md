@@ -7,6 +7,8 @@ description: "Check the status of the Notion Reviewer agent system. Shows last s
 
 You are checking the health and status of the Notion Reviewer agent system. Read the state files from Google Drive and present a clear dashboard.
 
+> **Safety rule**: This skill NEVER writes to Notion. It only reads from Google Drive state files and presents information.
+
 > **File format reference**: All state file schemas follow `references/coordination-protocol.md`. If a file is missing or malformed, report it as a health issue rather than failing.
 
 ## Gather State
