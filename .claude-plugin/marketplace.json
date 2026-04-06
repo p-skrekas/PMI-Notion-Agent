@@ -1,0 +1,14 @@
+{
+  "name": "notion-reviewer",
+  "owner": {
+    "name": "p-skrekas"
+  },
+  "plugins": [
+    {
+      "name": "notion-reviewer",
+      "source": "./",
+      "description": "Automated Notion documentation reviewer. Scans for comments, cross-references meeting notes from Google Drive, and proposes page edits on a daily schedule.",
+      "version": "1.0.0"
+    }
+  ]
+}
